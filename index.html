@@ -13,22 +13,28 @@
     <title>CSS is amazing</title>
   </head>
 </html>
-<body>
+<body class="page">
   <!-- #region Heder -->
-  <heder>
-    <nav>
-      <a href=""><i>SIMPLY</i> CHOCOLATE</a>
-      <img src="./images/logo.svg" alt="Site-logo" width="24" height="24" />
+  <heder class="header">
+    <nav class="header-nav">
+      <a class="logo"><i>SIMPLY</i> CHOCOLATE</a>
+      <img
+        class="logo-icon"
+        src="./images/logo.svg"
+        alt="Site-logo"
+        width="24"
+        height="24"
+      />
 
       <ul class="header-menu">
-        <li>
-          <a href="">Home</a>
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="">Home</a>
         </li>
-        <li>
-          <a href="">How it's made?</a>
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="">How it's made?</a>
         </li>
-        <li>
-          <a href="">Chocolate is loved</a>
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="">Chocolate is loved</a>
         </li>
       </ul>
     </nav>
@@ -36,11 +42,13 @@
     <ul class="socials header-socials">
       <li class="socials-item">
         <a
+          class="socials-link"
           href="https://facebook.com"
           target="_blank"
           rel="noopener noreferrer"
         >
           <img
+            class="socials-icon"
             src="./images/icons/facebook.svg"
             alt=""
             wight="40"
@@ -50,11 +58,13 @@
       </li>
       <li class="socials-item">
         <a
+          class="socials-link"
           href="https://instagram.com"
           target="_blank"
           rel="noopener noreferrer"
         >
           <img
+            class="socials-icon"
             src="./images/icons/instagram.svg"
             alt=""
             wight="40"
@@ -63,32 +73,43 @@
         </a>
       </li>
       <li class="socials-item">
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-          <img src="./images/icons/twitter.svg" alt="" wight="40" height="40" />
+        <a
+          class="socials-link"
+          href="https://twitter.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            class="socials-icon"
+            src="./images/icons/twitter.svg"
+            alt=""
+            wight="40"
+            height="40"
+          />
         </a>
       </li>
-    </ul> </heder
-  >bb
+    </ul>
+  </heder>
   <!-- #endregion -->
   <main>
     <!-- #region Hero -->
-    <section>
-      <h1>
+    <section class="hero">
+      <h1 class="hero-title">
         Treat yourself or a loved one to our finest ingredients for a moment of
         pure delight!
       </h1>
-      <button>Buy now</button>
-      <button>How it’s made</button>
+      <button class="btn hero-btn" type="button">Buy now</button>
+      <button class="btn hero-btn" type="button">How it’s made</button>
 
-      <a href=""
+      <a class="hero-link" href="#benefits"
         >scroll down <img src="./images/icons/arrow-down.svg" alt=""
       /></a>
     </section>
     <!-- #endregion -->
 
-    <!-- #region Simply chocolat elements -->
-    <section>
-      <h2>Simply chocolat elements</h2>
+    <!-- #region benefits -->
+    <section id="benefits">
+      <h2>Benefits</h2>
       <ul>
         <li>
           <h3>Unsurpassed taste</h3>
@@ -121,7 +142,7 @@
       </ul>
     </section>
     <!-- #endregion -->
-    <!-- #region Ingridients -->
+    <!-- #region taste -->
     <section>
       <h2>It all adds up to one exceptional <span>taste</span> sensation</h2>
       <ul>
@@ -159,88 +180,94 @@
       </ul>
     </section>
     <!-- #endregion -->
-    <!-- #region How it’s made? -->
-    <section>
-      <h2>How it’s <span>made</span>?</h2>
-      <img src="" alt="" />
-      <h3>
+    <!-- #region made -->
+    <section class="section-made">
+      <h2 class="section-title">How it’s <span class="accent">made</span>?</h2>
+      <img
+        class="made-img"
+        src="./images/made/image.jpg"
+        alt="How it’s made?"
+        width="600"
+        height="400"
+      />
+      <h3 class="made-subtitle">
         Try our chocolates today and discover the perfect balance of flavor
       </h3>
-      <ul>
-        <li>
+      <ol class="made-list">
+        <li class="made-item">
           <p>
             Heat the milk in a saucepan without bringing it to a boil. Add sugar
             and cocoa powder.
           </p>
         </li>
-        <li>
+        <li class="made-item">
           <p>At the same time, prepare a water bath. Melt the butter on it.</p>
         </li>
-        <li>
+        <li class="made-item">
           <p>
             "Mix" the milk mixture and already liquid butter. Mix thoroughly
             with a silicone spatula so that the mass becomes uniform and silky.
           </p>
         </li>
-        <li>
+        <li class="made-item">
           <p>Heat the mixture over low heat, letting it barely boil.</p>
         </li>
-        <li>
+        <li class="made-item">
           <p>
             Pour the chocolate into special containers (can be replaced with ice
             molds). Allow to cool and harden.
           </p>
         </li>
-      </ul>
+      </ol>
     </section>
     <!-- #endregion -->
-    <!-- #region Our products -->
+    <!-- #region products -->
     <h2>Our products</h2>
     <ul>
       <li>
-        <img src="" alt="Orange " />
+        <img src="./images/products/img-1.jpg" alt="Orange " />
         <h3>Orange</h3>
         <p>Dark chocolate</p>
         <button type="button">45 UAH</button>
       </li>
       <li>
-        <img src="" alt="Apple&Cranberry" />
+        <img src="./images/products/img-2.jpg" alt="Apple&Cranberry" />
         <h3>Apple&Cranberry</h3>
         <p>Milk chocolate</p>
         <button type="button">50 UAH</button>
       </li>
       <li>
-        <img src="" alt="Lime&Sea salt" />
+        <img src="./images/products/img-3.jpg" alt="Lime&Sea salt" />
         <h3>Lime&Sea salt</h3>
         <p>Dark chocolate</p>
         <button type="button">66 UAH</button>
       </li>
       <li>
-        <img src="" alt="Pineapple" />
+        <img src="./images/products/img-4.jpg" alt="Pineapple" />
         <h3>Pineapple</h3>
         <p>Dark chocolate</p>
         <button type="button">54 UAH</button>
       </li>
       <li>
-        <img src="" alt="Classic" />
+        <img src="./images/products/img-5.jpg" alt="Classic" />
         <h3>Classic</h3>
         <p>Milk chocolate</p>
         <button type="button">45 UAH</button>
       </li>
       <li>
-        <img src="" alt="Honey" />
+        <img src="./images/products/img-6.jpg" alt="Honey" />
         <h3>Honey</h3>
         <p>Milk chocolate</p>
         <button type="button">50 UAH</button>
       </li>
       <li>
-        <img src="" alt="Roasted fruits" />
+        <img src="./images/products/img-7.jpg" alt="Roasted fruits" />
         <h3>Roasted fruits</h3>
         <p>Dark chocolate</p>
         <button type="button">66 UAH</button>
       </li>
       <li>
-        <img src="" alt="Classic" />
+        <img src="./images/products/img-8.jpg" alt="Classic" />
         <h3>Classic</h3>
         <p>White chocolate</p>
         <button type="button">54 UAH</button>
